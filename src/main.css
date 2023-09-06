@@ -1,0 +1,50 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div.bg-wrapper {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc35;
+    background-image: linear-gradient(62deg, #ffcc35 0%, #5fbeff 100%);
+}
+
+div.main-wrapper {
+
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* NAVIGATION start */
+
+nav.nav-wrapper {
+    display: block;
+    height: 200px;
+}
+
+/* NAVIGATION end */
+
+/* HEADER start */
+
+h1.header-title {
+    font-family: 'Noto Serif JP', serif;
+}
+
+h1.header-title:hover {
+    filter: drop-shadow(0 0 2em #ffffff)
+}
+
+p.header-p {
+    line-height: 1.6rem;
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+    /* … */
+  }
+
+/* HEADER end */

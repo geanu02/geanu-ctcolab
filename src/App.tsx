@@ -1,11 +1,17 @@
-function App() {
+import Navigation from "./Navigation";
+import Header from "./header";
+
+export default function App() {
 
   return (
     <>
-      <h1>Hi, I'm Gian</h1>
-      <p>This portfolio is under construction and will be ready for submission to Coding Temple x Co.Lab as an assessment project before the due date.</p>
+      <div className="bg-wrapper">
+        <div className="main-wrapper">
+          <Navigation />
+          <Header />
+
+        </div>
+      </div>
     </>
   )
 }
-
-export default App
