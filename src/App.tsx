@@ -5,7 +5,7 @@ import Profess from "./Profess";
 import Profile from "./Profile";
 import Projects from "./Projects";
 import Space from "./Space";
-import Header from "./header";
+import Headers from "./Headers";
 
 export default function App() {
 
@@ -15,7 +15,7 @@ export default function App() {
         <div className="main-wrapper">
           <Profile />
           <Space />
-          <Header />
+          <Headers />
           <Space />
           <Profess />
           <Space />
