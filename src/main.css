@@ -1,50 +1,193 @@
 body {
     box-sizing: border-box;
-    margin: 0;
+    margin: -16px 0 0;
     padding: 0;
+    
 }
 
 div.bg-wrapper {
-    height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 100px 0;
     background-color: #ffcc35;
     background-image: linear-gradient(62deg, #ffcc35 0%, #5fbeff 100%);
 }
 
 div.main-wrapper {
-
     margin: 0 auto;
     width: 90%;
     max-width: 800px;
     font-family: 'Work Sans', sans-serif;
 }
 
-/* NAVIGATION start */
+/* SPACE */
 
-nav.nav-wrapper {
-    display: block;
-    height: 200px;
+div.space {
+    height: 40px;
 }
 
-/* NAVIGATION end */
+@media (min-width: 680px) {
+    div.space {
+        height: 100px;
+    }
+}
 
-/* HEADER start */
+/* PROFILE start */
 
-h1.header-title {
+div.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 680px) {
+    div.profile-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+div.profile-pic-div {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+div.profile-pic-img {
+    background-image: url("https://avatars.githubusercontent.com/u/60329959");
+}
+
+
+h1.profile-title {
     font-family: 'Noto Serif JP', serif;
 }
 
-h1.header-title:hover {
-    filter: drop-shadow(0 0 2em #ffffff)
-}
+/* PROFILE end */
+
+/* HEADER start */
 
 p.header-p {
     line-height: 1.6rem;
+    text-align: center;
 }
 
-@media (min-height: 680px), screen and (orientation: portrait) {
-    /* … */
-  }
-
 /* HEADER end */
+
+/* PROFESS start */
+
+h2.header-subtitle,
+h2.profess-title, 
+h2.projects-title, 
+h2.joke-title {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+ul.profess-ul {
+    text-align: center;
+    list-style: none;
+}
+
+li.profess-li {
+    margin: 8px 0;
+}
+
+li.profess-li:before {
+    content: '✓ ';
+}
+
+/* PROFESS end */
+
+
+/* PROJECTS start */
+
+h2.projects-title {
+    text-align: center;
+}
+
+div.proj-pool {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.proj-item {
+    margin: 10px;
+    padding: 30px 50px;
+    border: 0;
+    border-radius: 7px;
+}
+
+a.proj-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.proj-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.sky { background-color: #5FBEFF; }
+div.lemon { background-color: #FFCC35; }
+div.indigo { background-color: #495BFF; }
+div.green { background-color: #72CDAB; }
+div.carnation { background-color: #FFB1E0; }
+
+/* PROJECTS end */
+
+/* JOKE start */
+
+p.joke-body {
+    text-align: center;
+}
+
+/* JOKE end */
+
+footer {
+    margin: 0;
+    padding: 60px 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+}
+
+div.foot-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+p.fl-body, 
+p.fr-body {
+    text-align: center;
+}
+
+p.fl-body > a {
+    color: #fff;
+}
+
+@media (min-width: 680px) {
+    div.foot-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    p.fl-body, 
+    p.fr-body {
+        width: 50%;
+    }
+}
